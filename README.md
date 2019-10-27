@@ -2,6 +2,8 @@
 
 > A functional implementation of Blockchain in DrRacket
 
+![](https://miro.medium.com/max/1399/1*627BG-7qMtaXNsX0n41C6Q.png)
+
 ## Main Components
 
 ### 1. Block 
@@ -27,4 +29,5 @@ Wallet contains one method to create a wallet by generating random public and pr
 - The Racket Community, _The Racket Guide_, 2014
 - Abelson, H., Sussman, J. G., _Structure and Interpretation of Computer Programs_, 1979
 - McCarthy, J., _Recursive Functions of Symbolic Expressions and Their Computation by Machine, Part I_, 1960
-- [Intoduction to the racket crypto libraby](https://rmculpepper.github.io/crypto/intro.html)
+- [Intoduction to the racket crypto library](https://rmculpepper.github.io/crypto/intro.html)
+- [Based on Java tutorial](https://medium.com/programmers-blockchain/create-simple-blockchain-java-tutorial-from-scratch-6eeed3cb03fa)
