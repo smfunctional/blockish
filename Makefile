@@ -2,7 +2,7 @@ all:
 	raco exe src/blockish.rkt
 
 clean:
-	rm -rf src/blockish src/*.rkt~ src/compiled/*.rkt
+	rm -rf src/blockish src/*.rkt~ src/components/*.rkt~ src/compiled/*.rkt
 
 deps:
 	raco pkg install sha crypto-lib
