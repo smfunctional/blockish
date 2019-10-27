@@ -8,6 +8,7 @@
 
 ### 1. Block 
 > contains the data along with the previous hash of the chain, the current hash of the data, data and  the timestamp.
+> the first block in the chain has a previous hash of 0 and is known as <b>Genesis</b>
 
 ```racket
 (struct block
@@ -30,4 +31,4 @@ Wallet contains one method to create a wallet by generating random public and pr
 - Abelson, H., Sussman, J. G., _Structure and Interpretation of Computer Programs_, 1979
 - McCarthy, J., _Recursive Functions of Symbolic Expressions and Their Computation by Machine, Part I_, 1960
 - [Intoduction to the racket crypto library](https://rmculpepper.github.io/crypto/intro.html)
-- [Based on Java tutorial](https://medium.com/programmers-blockchain/create-simple-blockchain-java-tutorial-from-scratch-6eeed3cb03fa)
+- [Based on this Java tutorial](https://medium.com/programmers-blockchain/create-simple-blockchain-java-tutorial-from-scratch-6eeed3cb03fa)
