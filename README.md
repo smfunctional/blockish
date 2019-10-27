@@ -1,2 +1,3 @@
-# blockish
-A functional implementation of Blockchain in DrRacket
+# Blockish 
+
+> A functional implementation of Blockchain in DrRacket
