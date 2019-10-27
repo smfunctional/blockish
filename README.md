@@ -7,8 +7,8 @@
 ## Main Components
 
 ### 1. Block 
-> contains the data along with the previous hash of the chain, the current hash of the data, data and  the timestamp.
-> the first block in the chain has a previous hash of 0 and is known as <b>Genesis</b>
+> Contains the data along with the previous hash of the chain, the current hash of the data, data and  the timestamp.
+> The first block in the chain has a previous hash of 0 and is known as <b>Genesis</b>
 
 ```racket
 (struct block
