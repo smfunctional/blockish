@@ -12,4 +12,11 @@
    (hash previous-link, current-date, nounce, timestamp)
  #:transparent)
 ```
-
+### 2. Wallet
+> It is a structure that contains a public and a private key.
+```racket
+(struct wallet
+  (private-key public-key)
+  #:prefab)
+```
+Wallet contains one method to create a wallet by generating random public and private keys.
