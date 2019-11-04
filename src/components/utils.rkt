@@ -1,7 +1,23 @@
 #lang racket
 (require racket/serialize)
+(require "wallet.rkt")
 
 (define ASCII-ZERO (char->integer #\0))
+
+;utility functions for printing and formatting transactions
+(define (format-transaction txn)
+  (format "...~a... sends ...~a... an amount of ~a"
+          (substring (wallet-public-key (transaction-from txn)) 64 80)
+          (substring (wallet-public-key (transaction-to txn)) 64 80)
+          (transaction-value txn)))
+          
+(define (print-block blk)
+  (printf "Block information\n ---------------------\n\nHash:\t~a\nHash_p:\t~a\nStamp:\t~a\nNonce:\t~a\nData:\t~a\n"
+          (block-hash blk)
+          (block-previous-hash blk)
+          (block-timestamp blk)
+          (block-nonce blk)
+          (format-transaction (block-transaction blk))))
 
 ; Export any structure to a file
 (define (struct->file object file)
